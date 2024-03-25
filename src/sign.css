@@ -1,0 +1,118 @@
+/* Navigation styles */
+nav {
+  background-color: #333; /* Background color for the navigation bar */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding around the navigation bar */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center align vertically */
+}
+
+nav h1 {
+  margin: 0; /* Remove default margin */
+}
+
+nav ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+nav ul li a:hover{
+  color: #666 !important;
+}
+
+nav ul li {
+  display: inline; /* Display list items horizontally */
+  margin-right: 20px; /* Add spacing between list items */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove margin from the last list item */
+}
+
+/* Signup/Login form styles */
+.main-container_signup {
+  min-width: 200px;
+  width: 40%;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: transparent; /* Transparent background */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-container_signup form{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box {
+  position: relative;
+  width: 60% !important;
+  margin-bottom: 25px;
+  background-color: #f4f4f4; /* Light gray background */
+  border-radius: 6px;
+  padding: 0 5px;
+}
+
+.box input {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #000; /* Black text color */
+}
+
+.box label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #666; /* Dark gray label color */
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.box input:focus + label,
+.box input:not(:placeholder-shown) + label {
+  top: 5px;
+  font-size: 12px;
+  color: #007bff; /* Adjusted label color */
+}
+
+p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p a {
+  color: #007bff; /* Adjusted link color */
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff; /* Adjusted button color */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Adjusted button hover color */
+}
